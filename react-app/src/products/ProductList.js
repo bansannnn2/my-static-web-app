@@ -18,7 +18,7 @@ function ProductList({ products }) {
               <div className="card-footer">
                 <ButtonFooter
                   label={'Edit'}
-                  // className={'edit'}
+                  className={'edit'}
                   iconClasses={'fas fa-edit'}
                 />
                 <ButtonFooter
