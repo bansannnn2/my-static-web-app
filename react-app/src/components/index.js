@@ -15,5 +15,5 @@ export {
   ListHeader,
   NavBar,
   NotFound,
-  ModalYesNo
+  ModalYesNo,
 };

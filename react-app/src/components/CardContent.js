@@ -1,4 +1,5 @@
 import React from 'react';
+import ButtonFooter from './ButtonFooter';
 
 const CardContent = ({ name, description }) => (
   <div className="card-content">

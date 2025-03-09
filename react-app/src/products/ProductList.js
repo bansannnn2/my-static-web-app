@@ -1,9 +1,9 @@
 import React from 'react';
 import { withRouter } from 'react-router';
 
-import { CardContent } from '../components';
+import { CardContent, ButtonFooter } from '../components';
 
-function ProductList({products}) {
+function ProductList({ products }) {
   return (
     <div>
       {products.length === 0 && <div>Loading data ...</div>}
@@ -15,6 +15,18 @@ function ProductList({products}) {
                 name={product.name}
                 description={product.description}
               />
+              <div className="card-footer">
+                <ButtonFooter
+                  label={'Edit'}
+                  // className={'edit'}
+                  iconClasses={'fas fa-edit'}
+                />
+                <ButtonFooter
+                  label={'Delete'}
+                  // className={'delete'}
+                  iconClasses={'fas fa-trash'}
+                />
+              </div>
             </div>
           </li>
         ))}
